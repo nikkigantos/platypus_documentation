@@ -21,38 +21,38 @@ The folder which will contain the necessary JAR files for the standard ROSJava e
 
 Import all the JAR files in this folder:
 
-actionlib_msgs-1.11.8.jar 
-apache_xmlrpc_client-0.2.1.jar 
-apache_xmlrpc_common-0.2.1.jar
-apache_xmlrpc_server-0.2.1.jar
-commons-pool-1.6.jar
-com.springsource.org.apache.commons.codec-1.3.0.jar
-com.springsource.org.apache.commons.httpclient-3.1.0.jar
-com.springsource.org.apache.commons.io-1.4.0.jar
-com.springsource.org.apache.commons.lang-2.4.0.jar
-com.springsource.org.apache.commons.logging-1.1.1.jar
-com.springsource.org.apache.commons.net-2.0.0.jar
-dnsjava-2.1.1.jar
-geometry_msgs-1.11.8.jar
-gradle_plugins-0.2.1.jar
-guava-12.0.jar
-jsr305-1.3.9.jar
-junit-3.8.2.jar
-master_info-0.2.0.jar
-message_generation-0.2.1.jar
-nav_msgs-1.11.8.jar
-netty-3.5.2.Final.jar
-rocon_service_pair_msgs-0.7.10.jar
-rocon_std_msgs-0.7.10.jar
-rosgraph_msgs-1.11.1.jar
-rosjava-0.2.1.jar
-rosjava_test_msgs-0.2.1.jar
-rosjava_utils-0.2.0.jar
-std_msgs-0.5.9.jar
-tf2_msgs-0.5.11.jar
-uuid_msgs-1.0.5.jar
-ws-commons-util-1.0.1.jar
-xml-apis-1.0.b2.jar
+- actionlib_msgs-1.11.8.jar 
+- apache_xmlrpc_client-0.2.1.jar 
+- apache_xmlrpc_common-0.2.1.jar
+- apache_xmlrpc_server-0.2.1.jar
+- commons-pool-1.6.jar
+- com.springsource.org.apache.commons.codec-1.3.0.jar
+- com.springsource.org.apache.commons.httpclient-3.1.0.jar
+- com.springsource.org.apache.commons.io-1.4.0.jar
+- com.springsource.org.apache.commons.lang-2.4.0.jar
+- com.springsource.org.apache.commons.logging-1.1.1.jar
+- com.springsource.org.apache.commons.net-2.0.0.jar
+- dnsjava-2.1.1.jar
+- geometry_msgs-1.11.8.jar
+- gradle_plugins-0.2.1.jar
+- guava-12.0.jar
+- jsr305-1.3.9.jar
+- junit-3.8.2.jar
+- master_info-0.2.0.jar
+- message_generation-0.2.1.jar
+- nav_msgs-1.11.8.jar
+- netty-3.5.2.Final.jar
+- rocon_service_pair_msgs-0.7.10.jar
+- rocon_std_msgs-0.7.10.jar
+- rosgraph_msgs-1.11.1.jar
+- rosjava-0.2.1.jar
+- rosjava_test_msgs-0.2.1.jar
+- rosjava_utils-0.2.0.jar
+- std_msgs-0.5.9.jar
+- tf2_msgs-0.5.11.jar
+- uuid_msgs-1.0.5.jar
+- ws-commons-util-1.0.1.jar
+- xml-apis-1.0.b2.jar
 
 Our code utilizes a message package, which does not come automatically with the standard ROSJava installation. You must retrieve this package in order to get the geography messages JAR into Netbeans.
 
@@ -80,7 +80,7 @@ To import the geography messages JAR into Netbeans, following the same method as
 
 Import the following JAR file: 
 
-geographic_msgs-0.4.0.jar
+- geographic_msgs-0.4.0.jar
 
 Test the ROSJava coupled Sami-crw software
 ------------------------------------------
@@ -100,7 +100,9 @@ You should see the following:
 
 Then try in a terminal window::
 
-$ rostopic pub -1 /crw_waypoint_sub geographic_msgs/GeoPose '{position: {latitude: 44.642, longitude: -123.065, altitude: 0.0}, orientation: {x: 0.0, y: 0.0, z: 0.0, w: 1.0}}'
+  $ rostopic pub -1 /crw_waypoint_sub geographic_msgs/GeoPose 
+  '{position: {latitude: 44.642, longitude: -123.065, altitude: 0.0}, orientation: 
+  {x: 0.0, y: 0.0, z: 0.0, w: 1.0}}'
 
 
 This should publish 1 message of type GeoPose to the /crw_waypoint_sub topic.
