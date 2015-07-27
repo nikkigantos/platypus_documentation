@@ -20,10 +20,5 @@ The main documentation for the site is organized into a couple sections:
 
 
 
-Indices and tables
-==================
 
-* :ref:`genindex`
-* :ref:`modindex`
-* :ref:`search`
 
