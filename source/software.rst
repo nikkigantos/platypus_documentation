@@ -43,7 +43,7 @@ Installing the Software
     NOTE: To change the 'run' setup of the program in Netbeans, select the sami-crw project on the main projects window, right click and select 'Properties.' This will open a new dialogue box. On the menu in this box, select 'Run.' Use the above parameters to configure the run setup. 
 
 
-Starting the boat:
+Starting the boat
 ------------------
 
 First make sure you have successfully turned on the boat, connected the phone, and are able to get GPS, following the procedure for boat startup:
@@ -69,7 +69,7 @@ Close up electronics Bay – get ready for deployment
 Also, make sure both the phone and the computer are connected to the same network. 
 
 
-Launching the Sami-Crw software and Connecting the Boat:
+Launching the Sami-Crw software and Connecting the Boat
 --------------------------------------------------------
 
 NOTE: When running the software from Netbeans for the first time, you will be prompted to select a .drm file. By default this .drm file is located in the sami-crw/plans folder. Navigate to this folder and select the .drm file. 
